@@ -203,7 +203,7 @@
                     <form role="form">
                         <div class="row">
                             
-                            <div class="form-group col-lg-4">
+                            <div class="form-group col-lg-12">
                                 <label>Email Address</label>
                                 <input type="email" id="email" name="email" maxlength="25" class="form-control">
                             </div>
