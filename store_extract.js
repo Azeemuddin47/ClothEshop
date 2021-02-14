@@ -15,25 +15,26 @@ function ready() {
   loadCartItems() 
   updateCartTotal();
 
-  var removeCartItemsButton = document.getElementsByClassName("btn-danger");
-  for (var i = 0; i < removeCartItemsButton.length; i++) {
-    var button = removeCartItemsButton[i];
-    button.addEventListener("click", removeCartItem);
-  }
-  var quantityInputs = document.getElementsByClassName("qty");
-  for (var i = 0; i < quantityInputs.length; i++) {
-    var input = quantityInputs[i];
-    input.addEventListener("change", quantityChanged);
-  }
+  // var removeCartItemsButton = document.getElementsByClassName("btn-danger");
+  // for (var i = 0; i < removeCartItemsButton.length; i++) {
+  //   var button = removeCartItemsButton[i];
+  //   button.addEventListener("click", removeCartItem);
+  // }
+  // var quantityInputs = document.getElementsByClassName("qty");
+  // for (var i = 0; i < quantityInputs.length; i++) {
+  //   var input = quantityInputs[i];
+  //   input.addEventListener("change", quantityChanged);
+  // }
 }
 
-async function loadCartItems() {
+function loadCartItems() {
   for(var i = 0; i < products.length;i++) {
     var itemName = products[i]['name']
     var itemPrice = products[i]['price']
     var itemImage = products[i]['img']
 
     var cartRow = document.createElement('tr')
+    cartRow.classList.add('cart-row')
     var cartItems = document.getElementsByClassName('cart-items')[0]
     var cartRowContents = `
                 <td>
@@ -62,8 +63,8 @@ async function loadCartItems() {
   `
     cartRow.innerHTML = cartRowContents
     cartItems.prepend(cartRow)
-    // cartRow.getElementsByClassName("btn-danger")[0].addEventListener('click', removeCartItem);
-    // cartRow.getElementsByClassName("qty")[0].addEventListener("change", quantityChanged)
+    cartRow.getElementsByClassName("btn-danger")[0].addEventListener('click', removeCartItem);
+    cartRow.getElementsByClassName("qty")[0].addEventListener("change", quantityChanged)
   }
 }
 
@@ -91,7 +92,6 @@ function updateCartTotal() {
   var total = 0;
   for (var i = 0; i < cartRows.length; i++) {
     var cartRow = cartRows[i];
-    // console.log(cartRow)
     var itemQuantity = cartRow
       .getElementsByClassName("cart-quantity")[0]
       .getElementsByClassName("product_count")[0]
@@ -99,12 +99,11 @@ function updateCartTotal() {
     var itemPrice = cartRow.getElementsByTagName("h5")[0].innerText;
     var quantity = itemQuantity.value;
     var price = parseFloat(itemPrice.replace("₹", ""));
-    console.log(price);
     total += price * quantity;
   }
   document
     .getElementsByClassName("cart-items")[0]
     .getElementsByClassName("cart-subtotal")[0]
     .getElementsByClassName("subtotal")[0]
-    .getElementsByTagName("h5")[0].innerText = "₹" + total;
+    .getElementsByTagName("h5")[0].innerText = "₹ " + total;
 }
