@@ -30,6 +30,8 @@ if(isset($_SESSION['login'])) {
   <!-- main css -->
   <link rel="stylesheet" href="css/style.css" />
   <link rel="stylesheet" href="css/responsive.css" />
+   <!-- javascript -->
+   <script src="store_product.js" async></script>
 </head>
 
 <body>
@@ -171,25 +173,11 @@ if(isset($_SESSION['login'])) {
   <section class="cat_product_area section_gap">
     <div class="container">
       <div class="row flex-row-reverse">
-        <div class="col-lg-9">
-          <div class="product_top_bar">
-            <div class="left_dorp">
-              <select class="sorting">
-                <option value="1">Default sorting</option>
-                <option value="2">Default sorting 01</option>
-                <option value="4">Default sorting 02</option>
-              </select>
-              <select class="show">
-                <option value="1">Show 12</option>
-                <option value="2">Show 14</option>
-                <option value="4">Show 16</option>
-              </select>
-            </div>
-          </div>
+        <div class="col-lg-12">
 
           <div class="latest_product_inner">
             <div class="row">
-              <div class="col-lg-4 col-md-6">
+              <div class="col-lg-4 col-md-6 shop-item" >
                 <div class="single-product">
                   <div class="product-img">
                     <img class="card-img" src="img/product/inspired-product/i1.jpg" alt="" />
@@ -200,24 +188,24 @@ if(isset($_SESSION['login'])) {
                       <a href="#">
                         <i class="ti-heart"></i>
                       </a>
-                      <a href="#">
+                      <a class = "btn-add-to-cart">
                         <i class="ti-shopping-cart"></i>
                       </a>
                     </div>
                   </div>
                   <div class="product-btm">
-                    <a href="#" class="d-block">
+                    <a class="d-block item-name">
                       <h4>Women's purse</h4>
                     </a>
-                    <div class="mt-3">
-                      <span class="mr-4">₹ 2500</span>
+                    <div class="mt-3 item-price">
+                      <span class="mr-4 price">₹ 2500</span>
                       <del>₹ 3500</del>
                     </div>
                   </div>
                 </div>
               </div>
 
-              <div class="col-lg-4 col-md-6">
+              <div class="col-lg-4 col-md-6 shop-item">
                 <div class="single-product">
                   <div class="product-img">
                     <img class="card-img" src="img/product/inspired-product/i2.jpg" alt="" />
@@ -228,23 +216,23 @@ if(isset($_SESSION['login'])) {
                       <a href="#">
                         <i class="ti-heart"></i>
                       </a>
-                      <a href="#">
+                      <a class = "btn-add-to-cart">
                         <i class="ti-shopping-cart"></i>
                       </a>
                     </div>
                   </div>
                   <div class="product-btm">
-                    <a href="#" class="d-block">
+                    <a href="#" class="d-block item-name">
                       <h4>Men's Jeans</h4>
                     </a>
-                    <div class="mt-3">
-                      <span class="mr-4">₹ 699</span>
+                    <div class="mt-3 item-price">
+                      <span class="mr-4 price">₹ 699</span>
                     </div>
                   </div>
                 </div>
               </div>
 
-              <div class="col-lg-4 col-md-6">
+              <div class="col-lg-4 col-md-6 shop-item">
                 <div class="single-product">
                   <div class="product-img">
                     <img class="card-img" src="img/product/inspired-product/i3.jpg" alt="" />
@@ -255,23 +243,23 @@ if(isset($_SESSION['login'])) {
                       <a href="#">
                         <i class="ti-heart"></i>
                       </a>
-                      <a href="#">
+                      <a class = "btn-add-to-cart">
                         <i class="ti-shopping-cart"></i>
                       </a>
                     </div>
                   </div>
                   <div class="product-btm">
-                    <a href="#" class="d-block">
+                    <a href="#" class="d-block item-name">
                       <h4>e-watch</h4>
                     </a>
-                    <div class="mt-3">
-                      <span class="mr-4">₹ 1499</span>
+                    <div class="mt-3 item-price">
+                      <span class="mr-4 price">₹ 1499</span>
                     </div>
                   </div>
                 </div>
               </div>
 
-              <div class="col-lg-4 col-md-6">
+              <div class="col-lg-4 col-md-6 shop-item">
                 <div class="single-product">
                   <div class="product-img">
                     <img class="card-img" src="img/product/inspired-product/i4.jpg" alt="" />
@@ -282,23 +270,23 @@ if(isset($_SESSION['login'])) {
                       <a href="#">
                         <i class="ti-heart"></i>
                       </a>
-                      <a href="#">
+                      <a class = "btn-add-to-cart">
                         <i class="ti-shopping-cart"></i>
                       </a>
                     </div>
                   </div>
                   <div class="product-btm">
-                    <a href="#" class="d-block">
+                    <a href="#" class="d-block item-name">
                       <h4>Latest men’s sneaker</h4>
                     </a>
-                    <div class="mt-3">
-                      <span class="mr-4">₹ 2999</span>
+                    <div class="mt-3 item-price">
+                      <span class="mr-4 price">₹ 2999</span>
                     </div>
                   </div>
                 </div>
               </div>
 
-              <div class="col-lg-4 col-md-6">
+              <div class="col-lg-4 col-md-6 shop-item">
                 <div class="single-product">
                   <div class="product-img">
                     <img class="card-img" src="img/product/inspired-product/i5.jpg" alt="" />
@@ -309,23 +297,23 @@ if(isset($_SESSION['login'])) {
                       <a href="#">
                         <i class="ti-heart"></i>
                       </a>
-                      <a href="#">
+                      <a class = "btn-add-to-cart">
                         <i class="ti-shopping-cart"></i>
                       </a>
                     </div>
                   </div>
                   <div class="product-btm">
-                    <a href="#" class="d-block">
+                    <a href="#" class="d-block item-name">
                       <h4>Quartz Mens Watch</h4>
                     </a>
-                    <div class="mt-3">
-                      <span class="mr-4">₹ 1999</span>
+                    <div class="mt-3 item-price">
+                      <span class="mr-4 price">₹ 1999</span>
                     </div>
                   </div>
                 </div>
               </div>
 
-              <div class="col-lg-4 col-md-6">
+              <div class="col-lg-4 col-md-6 shop-item">
                 <div class="single-product">
                   <div class="product-img">
                     <img class="card-img" src="img/product/inspired-product/i6.jpg" alt="" />
@@ -336,23 +324,23 @@ if(isset($_SESSION['login'])) {
                       <a href="#">
                         <i class="ti-heart"></i>
                       </a>
-                      <a href="#">
+                      <a class = "btn-add-to-cart">
                         <i class="ti-shopping-cart"></i>
                       </a>
                     </div>
                   </div>
                   <div class="product-btm">
-                    <a href="#" class="d-block">
+                    <a href="#" class="d-block item-name">
                       <h4> women’s footwear</h4>
                     </a>
-                    <div class="mt-3">
-                      <span class="mr-4">₹ 899</span>
+                    <div class="mt-3 item-price">
+                      <span class="mr-4 price">₹ 899</span>
                     </div>
                   </div>
                 </div>
               </div>
 
-              <div class="col-lg-4 col-md-6">
+              <div class="col-lg-4 col-md-6 shop-item">
                 <div class="single-product">
                   <div class="product-img">
                     <img class="card-img" src="img/product/inspired-product/i7.jpg" alt="" />
@@ -363,23 +351,23 @@ if(isset($_SESSION['login'])) {
                       <a href="#">
                         <i class="ti-heart"></i>
                       </a>
-                      <a href="#">
+                      <a class = "btn-add-to-cart">
                         <i class="ti-shopping-cart"></i>
                       </a>
                     </div>
                   </div>
                   <div class="product-btm">
-                    <a href="#" class="d-block">
+                    <a href="#" class="d-block item-name">
                       <h4>Ladies Purse</h4>
                     </a>
-                    <div class="mt-3">
-                      <span class="mr-4">₹ 3999</span>
+                    <div class="mt-3 item-price">
+                      <span class="mr-4 price">₹ 3999</span>
                     </div>
                   </div>
                 </div>
               </div>
 
-              <div class="col-lg-4 col-md-6">
+              <div class="col-lg-4 col-md-6 shop-item">
                 <div class="single-product">
                   <div class="product-img">
                     <img class="card-img" src="img/product/inspired-product/i8.jpg" alt="" />
@@ -390,23 +378,23 @@ if(isset($_SESSION['login'])) {
                       <a href="#">
                         <i class="ti-heart"></i>
                       </a>
-                      <a href="#">
+                      <a class = "btn-add-to-cart">
                         <i class="ti-shopping-cart"></i>
                       </a>
                     </div>
                   </div>
                   <div class="product-btm">
-                    <a href="#" class="d-block">
+                    <a href="#" class="d-block item-name">
                       <h4>Men's sports shoes</h4>
                     </a>
-                    <div class="mt-3">
-                      <span class="mr-4">₹ 399</span>
+                    <div class="mt-3 item-price">
+                      <span class="mr-4 price">₹ 399</span>
                     </div>
                   </div>
                 </div>
               </div>
 
-              <div class="col-lg-4 col-md-6">
+              <div class="col-lg-4 col-md-6 shop-item">
                 <div class="single-product">
                   <div class="product-img">
                     <img class="card-img" src="img/product/inspired-product/i2.jpg" alt="" />
@@ -417,17 +405,17 @@ if(isset($_SESSION['login'])) {
                       <a href="#">
                         <i class="ti-heart"></i>
                       </a>
-                      <a href="#">
+                      <a class = "btn-add-to-cart"> 
                         <i class="ti-shopping-cart"></i>
                       </a>
                     </div>
                   </div>
                   <div class="product-btm">
-                    <a href="#" class="d-block">
+                    <a href="#" class="d-block item-name">
                       <h4>Denim jeans</h4>
                     </a>
-                    <div class="mt-3">
-                      <span class="mr-4">₹ 1999</span>
+                    <div class="mt-3 item-price">
+                      <span class="mr-4 price">₹ 1999</span>
                     </div>
                   </div>
                 </div>
@@ -436,60 +424,7 @@ if(isset($_SESSION['login'])) {
           </div>
         </div>
 
-        <div class="col-lg-3">
-          <div class="left_sidebar_area">
-            <aside class="left_widgets p_filter_widgets">
-              <div class="l_w_title">
-                <h3>Browse Categories</h3>
-              </div>
-              <div class="widgets_inner">
-                <ul class="list">
-                  <li>
-                    <a href="#">Shirts</a>
-                  </li>
-                  <li>
-                    <a href="#">Jeans</a>
-                  </li>
-                  <li>
-                    <a href="#">Watches</a>
-                  </li>
-                  <li>
-                    <a href="#">Shoes</a>
-                  </li>
-                  <li>
-                    <a href="#">Purse</a>
-                  </li>
 
-                </ul>
-              </div>
-            </aside>
-
-            <aside class="left_widgets p_filter_widgets">
-              <div class="l_w_title">
-                <h3>Product Brand</h3>
-              </div>
-              <div class="widgets_inner">
-                <ul class="list">
-                  <li>
-                    <a href="#">Nike</a>
-                  </li>
-                  <li>
-                    <a href="#">Adidas</a>
-                  </li>
-                  <li class="active">
-                    <a href="#">Lacoste</a>
-                  </li>
-                  <li>
-                    <a href="#">Gucci</a>
-                  </li>
-                  <li>
-                    <a href="#">Versache</a>
-                  </li>
-                </ul>
-              </div>
-            </aside>
-          </div>
-        </div>
       </div>
     </div>
   </section>

@@ -24,7 +24,7 @@
   <!-- Jquery -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <!-- javascript -->
-  <script src="store.js" async></script>
+  <script src="store_product.js" async></script>
 </head>
 
 <body>
