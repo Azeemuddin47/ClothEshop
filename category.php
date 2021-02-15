@@ -32,6 +32,11 @@ if(isset($_SESSION['login'])) {
   <link rel="stylesheet" href="css/responsive.css" />
    <!-- javascript -->
    <script src="store_product.js" async></script>
+   <script type="text/javascript">
+    function added(){
+      alert('Item added');
+    }
+   </script>
 </head>
 
 <body>
@@ -91,7 +96,7 @@ if(isset($_SESSION['login'])) {
                         <a class="nav-link" href="category.php">Shop Category</a>
                       </li>
                       <li class="nav-item">
-                        <a class="nav-link" href="checkout.php">Product Checkout</a>
+                        <a class="nav-link" href="cart.php">Cart</a>
                       </li>
                     </ul>
                   </li>
@@ -116,12 +121,6 @@ if(isset($_SESSION['login'])) {
                   <li class="nav-item">
                     <a href="cart.php" class="icons">
                       <i class="ti-shopping-cart"></i>
-                    </a>
-                  </li>
-
-                  <li class="nav-item">
-                    <a href="#" class="icons">
-                      <i class="ti-user" aria-hidden="true"></i>
                     </a>
                   </li>
 
@@ -182,13 +181,7 @@ if(isset($_SESSION['login'])) {
                   <div class="product-img">
                     <img class="card-img" src="img/product/inspired-product/i1.jpg" alt="" />
                     <div class="p_icon">
-                      <a href="#">
-                        <i class="ti-eye"></i>
-                      </a>
-                      <a href="#">
-                        <i class="ti-heart"></i>
-                      </a>
-                      <a class = "btn-add-to-cart">
+                      <a class = "btn-add-to-cart" onClick="added()">
                         <i class="ti-shopping-cart"></i>
                       </a>
                     </div>
@@ -210,19 +203,13 @@ if(isset($_SESSION['login'])) {
                   <div class="product-img">
                     <img class="card-img" src="img/product/inspired-product/i2.jpg" alt="" />
                     <div class="p_icon">
-                      <a href="#">
-                        <i class="ti-eye"></i>
-                      </a>
-                      <a href="#">
-                        <i class="ti-heart"></i>
-                      </a>
-                      <a class = "btn-add-to-cart">
+                      <a class = "btn-add-to-cart" onClick="added()">
                         <i class="ti-shopping-cart"></i>
                       </a>
                     </div>
                   </div>
                   <div class="product-btm">
-                    <a href="#" class="d-block item-name">
+                    <a  class="d-block item-name">
                       <h4>Men's Jeans</h4>
                     </a>
                     <div class="mt-3 item-price">
@@ -237,19 +224,14 @@ if(isset($_SESSION['login'])) {
                   <div class="product-img">
                     <img class="card-img" src="img/product/inspired-product/i3.jpg" alt="" />
                     <div class="p_icon">
-                      <a href="#">
-                        <i class="ti-eye"></i>
-                      </a>
-                      <a href="#">
-                        <i class="ti-heart"></i>
-                      </a>
-                      <a class = "btn-add-to-cart">
+                     
+                      <a class = "btn-add-to-cart" onClick="added()">
                         <i class="ti-shopping-cart"></i>
                       </a>
                     </div>
                   </div>
                   <div class="product-btm">
-                    <a href="#" class="d-block item-name">
+                    <a class="d-block item-name">
                       <h4>e-watch</h4>
                     </a>
                     <div class="mt-3 item-price">
@@ -264,19 +246,14 @@ if(isset($_SESSION['login'])) {
                   <div class="product-img">
                     <img class="card-img" src="img/product/inspired-product/i4.jpg" alt="" />
                     <div class="p_icon">
-                      <a href="#">
-                        <i class="ti-eye"></i>
-                      </a>
-                      <a href="#">
-                        <i class="ti-heart"></i>
-                      </a>
-                      <a class = "btn-add-to-cart">
+                      
+                      <a class = "btn-add-to-cart" onClick="added()">
                         <i class="ti-shopping-cart"></i>
                       </a>
                     </div>
                   </div>
                   <div class="product-btm">
-                    <a href="#" class="d-block item-name">
+                    <a  class="d-block item-name">
                       <h4>Latest men’s sneaker</h4>
                     </a>
                     <div class="mt-3 item-price">
@@ -291,19 +268,14 @@ if(isset($_SESSION['login'])) {
                   <div class="product-img">
                     <img class="card-img" src="img/product/inspired-product/i5.jpg" alt="" />
                     <div class="p_icon">
-                      <a href="#">
-                        <i class="ti-eye"></i>
-                      </a>
-                      <a href="#">
-                        <i class="ti-heart"></i>
-                      </a>
-                      <a class = "btn-add-to-cart">
+                      
+                      <a class = "btn-add-to-cart" onClick="added()">
                         <i class="ti-shopping-cart"></i>
                       </a>
                     </div>
                   </div>
                   <div class="product-btm">
-                    <a href="#" class="d-block item-name">
+                    <a  class="d-block item-name">
                       <h4>Quartz Mens Watch</h4>
                     </a>
                     <div class="mt-3 item-price">
@@ -318,19 +290,14 @@ if(isset($_SESSION['login'])) {
                   <div class="product-img">
                     <img class="card-img" src="img/product/inspired-product/i6.jpg" alt="" />
                     <div class="p_icon">
-                      <a href="#">
-                        <i class="ti-eye"></i>
-                      </a>
-                      <a href="#">
-                        <i class="ti-heart"></i>
-                      </a>
-                      <a class = "btn-add-to-cart">
+                     
+                      <a class = "btn-add-to-cart" onClick="added()">
                         <i class="ti-shopping-cart"></i>
                       </a>
                     </div>
                   </div>
                   <div class="product-btm">
-                    <a href="#" class="d-block item-name">
+                    <a  class="d-block item-name">
                       <h4> women’s footwear</h4>
                     </a>
                     <div class="mt-3 item-price">
@@ -345,19 +312,14 @@ if(isset($_SESSION['login'])) {
                   <div class="product-img">
                     <img class="card-img" src="img/product/inspired-product/i7.jpg" alt="" />
                     <div class="p_icon">
-                      <a href="#">
-                        <i class="ti-eye"></i>
-                      </a>
-                      <a href="#">
-                        <i class="ti-heart"></i>
-                      </a>
-                      <a class = "btn-add-to-cart">
+                     
+                      <a class = "btn-add-to-cart" onClick="added()">
                         <i class="ti-shopping-cart"></i>
                       </a>
                     </div>
                   </div>
                   <div class="product-btm">
-                    <a href="#" class="d-block item-name">
+                    <a  class="d-block item-name">
                       <h4>Ladies Purse</h4>
                     </a>
                     <div class="mt-3 item-price">
@@ -372,19 +334,14 @@ if(isset($_SESSION['login'])) {
                   <div class="product-img">
                     <img class="card-img" src="img/product/inspired-product/i8.jpg" alt="" />
                     <div class="p_icon">
-                      <a href="#">
-                        <i class="ti-eye"></i>
-                      </a>
-                      <a href="#">
-                        <i class="ti-heart"></i>
-                      </a>
-                      <a class = "btn-add-to-cart">
+                      
+                      <a class = "btn-add-to-cart" onClick="added()">
                         <i class="ti-shopping-cart"></i>
                       </a>
                     </div>
                   </div>
                   <div class="product-btm">
-                    <a href="#" class="d-block item-name">
+                    <a  class="d-block item-name">
                       <h4>Men's sports shoes</h4>
                     </a>
                     <div class="mt-3 item-price">
@@ -399,19 +356,14 @@ if(isset($_SESSION['login'])) {
                   <div class="product-img">
                     <img class="card-img" src="img/product/inspired-product/i2.jpg" alt="" />
                     <div class="p_icon">
-                      <a href="#">
-                        <i class="ti-eye"></i>
-                      </a>
-                      <a href="#">
-                        <i class="ti-heart"></i>
-                      </a>
-                      <a class = "btn-add-to-cart"> 
+                      
+                      <a class = "btn-add-to-cart" onClick="added()"> 
                         <i class="ti-shopping-cart"></i>
                       </a>
                     </div>
                   </div>
                   <div class="product-btm">
-                    <a href="#" class="d-block item-name">
+                    <a  class="d-block item-name">
                       <h4>Denim jeans</h4>
                     </a>
                     <div class="mt-3 item-price">

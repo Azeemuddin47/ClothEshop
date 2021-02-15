@@ -51,4 +51,5 @@ function addToCartClicked(event) {
   productId = productId + 1;
   products.push({ "productId": productId, "name": itemName, "price": itemPrice, "img" : itemImg });
   localStorage.setItem("products", JSON.stringify(products));
+  
 }
