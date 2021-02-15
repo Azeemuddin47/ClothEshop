@@ -21,7 +21,7 @@
   <link rel="stylesheet" href="css/style.css" />
   <link rel="stylesheet" href="css/responsive.css" />
   <!-- javascript -->
-  <script src="store.js" async></script>
+  <script src="store_extract.js" async></script>
 </head>
 
 <body>
@@ -63,11 +63,12 @@
               </tr>
             </thead>
             <tbody class = 'cart-items'>
-              <tr class = 'cart-row'>
+            
+              <!-- <tr class = 'cart-row'>
                 <td>
                   <div class="media">
                     <div class="d-flex">
-                      <img src="img/product/single-product/cart-1.jpg" alt="" />
+                      <img src="img/product/single-product/cart-1.jpg" alt=""  />
                     </div>
                     <div class="media-body">
                       <p>Minimalistic shop for multipurpose use</p>
@@ -75,24 +76,19 @@
                   </div>
                 </td>
                 <td class = 'cart-price'>
-                  <h5>Rs360.00</h5>
+                  <h5>₹ 360.00</h5>
                 </td>
                 <td class = "cart-quantity">
                   <div class="product_count">
                   <input type="number" value="1" class="input-text qty" />
-                    <!-- <button onclick="var result = document.getElementById('sst'); var sst = result.value; if( !isNaN( sst )) result.value++;return false;" class="increase items-count" type="button">
-                      <i class="lnr lnr-chevron-up"></i>
-                    </button>
-                    <button onclick="var result = document.getElementById('sst'); var sst = result.value; if( !isNaN( sst ) &amp;&amp; sst > 0 ) result.value--;return false;" class="reduced items-count" type="button">
-                      <i class="lnr lnr-chevron-down"></i>
-                    </button> -->
                   </div>
                 </td>
                 <td>
                 <button type="button" class="btn btn-danger">Remove</button>
                 </td>
-              </tr>
-              <tr class = 'cart-row'>
+              </tr> -->
+              
+              <!-- <tr class = 'cart-row'>
                 <td>
                   <div class="media">
                     <div class="d-flex">
@@ -104,24 +100,20 @@
                   </div>
                 </td>
                 <td class = 'cart-price'>
-                  <h5>Rs360.00</h5>
+                  <h5>₹ 360.00</h5>
                 </td>
                 <td class = "cart-quantity">
                   <div class="product_count">
                     <input type="number" value="1" class="input-text qty" />
-                    <!-- <button onclick="var result = document.getElementById('sst'); var sst = result.value; if( !isNaN( sst )) result.value++;return false;" class="increase items-count" type="button">
-                      <i class="lnr lnr-chevron-up"></i>
-                    </button>
-                    <button onclick="var result = document.getElementById('sst'); var sst = result.value; if( !isNaN( sst ) &amp;&amp; sst > 0 ) result.value--;return false;" class="reduced items-count" type="button">
-                      <i class="lnr lnr-chevron-down"></i>
-                    </button> -->
+                    
                   </div>
                 </td>
                 <td>
                 <button type="button" class="btn btn-danger">Remove</button>
                 </td>
-              </tr>
-              <tr class = 'cart-row'>
+              </tr> -->
+              
+              <!-- <tr class = 'cart-row'>
                 <td>
                   <div class="media">
                     <div class="d-flex">
@@ -133,23 +125,19 @@
                   </div>
                 </td>
                 <td class = 'cart-price'> 
-                  <h5>Rs360.00</h5>
+                  <h5>₹ 360.00</h5>
                 </td>
                 <td class = "cart-quantity">
                   <div class="product_count">
                   <input type="number" value="1" class="input-text qty" />
-                    <!-- <button onclick="var result = document.getElementById('sst'); var sst = result.value; if( !isNaN( sst )) result.value++;return false;" class="increase items-count" type="button">
-                      <i class="lnr lnr-chevron-up"></i>
-                    </button>
-                    <button onclick="var result = document.getElementById('sst'); var sst = result.value; if( !isNaN( sst ) &amp;&amp; sst > 0 ) result.value--;return false;" class="reduced items-count" type="button">
-                      <i class="lnr lnr-chevron-down"></i>
-                    </button> -->
                   </div>
                 </td>
                 <td>
                 <button type="button" class="btn btn-danger">Remove</button>
                 </td>
-              </tr>
+              </tr> -->
+
+
               <tr class = "cart-subtotal">
                 <td></td>
                 <td></td>
@@ -157,50 +145,9 @@
                   <h5>Subtotal</h5>
                 </td>
                 <td class = "subtotal">
-                  <h5>2160.00</h5>
+                  <h5>₹ 0.00</h5>
                 </td>
               </tr>
-              <!-- <tr class="shipping_area">
-                <td></td>
-                <td></td>
-                <td>
-                  <h5>Shipping</h5>
-                </td>
-                <td>
-                  <div class="shipping_box">
-                    <ul class="list">
-                      <li>
-                        <a href="#">Flat Rate: Rs5.00</a>
-                      </li>
-                      <li>
-                        <a href="#">Free Shipping</a>
-                      </li>
-                      <li>
-                        <a href="#">Flat Rate: Rs10.00</a>
-                      </li>
-                      <li class="active">
-                        <a href="#">Local Delivery: Rs2.00</a>
-                      </li>
-                    </ul>
-                    <h6>
-                      Calculate Shipping
-                      <i class="fa fa-caret-down" aria-hidden="true"></i>
-                    </h6>
-                    <select class="shipping_select">
-                      <option value="1">Bangladesh</option>
-                      <option value="2">India</option>
-                      <option value="4">Pakistan</option>
-                    </select>
-                    <select class="shipping_select">
-                      <option value="1">Select a State</option>
-                      <option value="2">Select a State</option>
-                      <option value="4">Select a State</option>
-                    </select>
-                    <input type="text" placeholder="Postcode/Zipcode" />
-                    <a class="gray_btn" href="#">Update Details</a>
-                  </div>
-                </td>
-              </tr> -->
               <tr class="out_button_area">
                 <td></td>
                 <td></td>
